@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import Button from "../components/Button"
 import Form from "../components/Form"
 import Header from "../components/Header"
@@ -21,10 +22,10 @@ export default function Login() {
           <Button type="submit" text={'Entrar no sistema'} />
         </Form>
         <footer>
-          <a href="#"
+          <Link href="/register"
           >
             Não possui conta? Crie uma agora!
-          </a>
+          </Link>
         </footer>
       </S.Main>
     )

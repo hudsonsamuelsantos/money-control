@@ -1,16 +1,16 @@
+"use client"
+
+import Form from "../components/Form"
+import Header from "../components/Header"
+import Button from "../components/Button"
+import * as S from "./style"
+import Link from "next/link"
+
 export default function Register() {
   return (
-    <main>
-      <header>
-        {/*Logo*/}
-        <span>
-          Easy Money
-        </span>
-        <span>
-          Insira seus dados para criar uma conta!
-        </span>
-      </header>
-      <form>
+    <S.Main>
+      <Header />
+      <Form>
         <label>
           Seu nome
           <input type="text" name="name" id="name" placeholder="Nome"/>
@@ -27,16 +27,14 @@ export default function Register() {
           Confirme sua senha
           <input type="password" name="password" id="password" placeholder="***********"/>
         </label>
-        <button type="submit">
-          Cadastrar no sistema
-        </button>
-      </form>
+        <Button type="submit" text={'Cadastrar no sistema'} />
+      </Form>
       <footer>
-        <a href="#"
+        <Link href="/login"
         >
           Já possui conta? Faça login agora!
-        </a>
+        </Link>
       </footer>
-    </main>
+    </S.Main>
   )
 }
