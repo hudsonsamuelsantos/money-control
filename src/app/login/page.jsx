@@ -9,7 +9,7 @@ import * as S from "./style"
 export default function Login() {
     return (
       <S.Main>
-        <Header />
+        <Header text="Faça login e comece a usar!"/>
         <Form>
           <label>
             Endereço de e-mail

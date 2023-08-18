@@ -9,7 +9,7 @@ import Link from "next/link"
 export default function Register() {
   return (
     <S.Main>
-      <Header />
+      <Header text="Registre-se e comece a usar!"/>
       <Form>
         <label>
           Seu nome
