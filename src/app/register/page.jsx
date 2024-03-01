@@ -25,7 +25,7 @@ export default function Register() {
         </label>
         <label>
           Confirme sua senha
-          <input type="password" name="password" id="password" placeholder="***********"/>
+          <input type="password" name="password" id="confirmed-password" placeholder="***********"/>
         </label>
         <Button type="submit" text={'Cadastrar no sistema'} />
       </Form>
