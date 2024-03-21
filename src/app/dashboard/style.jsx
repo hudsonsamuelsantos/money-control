@@ -1,6 +1,6 @@
 'use client'
 
-import { styled } from "styled-components";
+import { styled } from 'styled-components'
 
 export const Main = styled.main`
     display: flex;
@@ -8,7 +8,16 @@ export const Main = styled.main`
     align-items: center;
     height: 100vh;
     padding-top: 32px;
-`;
+
+    .modal_close {
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -9999;
+    }
+`
 
 export const Table = styled.section`
     background-color: #f0f2f5;
@@ -46,4 +55,4 @@ export const Table = styled.section`
         gap: 180px;
         color: #7C7C8A;
     }
-`;
+`
